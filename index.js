@@ -15,6 +15,17 @@ function hasTargetSum(array, target) {
 */
 
 // You can run `node index.js` to view these console logs
+function hasTargetSum (array,target){
+  for(var i=0; i<=array.length-1;i++){
+    for(var f=0; f<=array.length-1;f++){
+      if(array[i]+array[f]===target&&i!==f){
+        return true
+      }
+    }
+  }
+  return false
+
+}
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
